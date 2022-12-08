@@ -1,0 +1,17 @@
+﻿@model PieMiniProject.ModelAccess.Models.Pie
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Produt Details</h1>
+<h2>@Model.Id</h2>
+<h2>@Model.Name</h2>
+<h2>@Model.Price</h2>
+
+<h2>@Model.ShortDescription</h2>
+<h2>@Model.LongDescription</h2>
+<img src="@Model.ImageUrl" height="100" width="100">
+<a asp-controller="Pie" asp-action="Index" class="btn btn-outline-info">Back</a>
+
+
+
